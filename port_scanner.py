@@ -22,7 +22,7 @@ def vulners():
     vulners_api = vulners.Vulners(api_key="api")
     tarama = vulners_api.search("servis", limit=3)
 
-    print(test)
+    print(tarama)
 
 port_taraması
 searchsploit
