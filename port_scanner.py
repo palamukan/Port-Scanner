@@ -17,13 +17,15 @@ def burut_fors():
     os.system("brutespray.py " "--file çıktı_adı.xml " "-U dizin/wl.txt " "-P dizin/wl.txt " "--threads 5 " "--hosts 5")
 
 def vulners():
-    api = input("Api key'i giriniz: ")
-    servis = input("Tarama yapmak istediğiniz servisi yazınız: ")
-    vulners_api = vulners.Vulners(api_key="api")
-    tarama = vulners_api.search("servis", limit=3)
-
+    
+    api = raw_input("Api key'i giriniz: ")
+    servis = raw_input("servisi giriniz :")
+    vulners_api = vulners.Vulners(api_key=api)
+    tarama = vulners_api.search(servis, limit=3)
     print(tarama)
+    
 
+   
 port_taraması
 searchsploit
 burut_fors
